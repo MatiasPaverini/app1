@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //title = 'app1';
-    edadUno:HTMLElement;
+    edadUno:HTMLInputElement;
 
-    edadDos:HTMLElement;
+    edadDos:HTMLInputElement;
 
     resultadoEdadSuma:number;
     
@@ -23,12 +23,17 @@ export class AppComponent {
     }
 
   
-  public onClick() :void {
+  public sumar() :void {
     this.edadUno = document.getElementById('edadUno');
+    console.log(this.edadUno)
 
     this.edadDos = document.getElementById('edadDos');
 
-    this.resultadoEdadSuma = parseInt(this.edadUno.innerText) + parseInt(this.edadDos.innerText);
+    console.log(this.edadDos);
+
+    this.resultadoEdadSuma = parseInt(this.edadUno.value) + parseInt(this.edadDos.value);
+
+    console.log(this.resultadoEdadSuma);
 
     this.resultadoEdadProm = this.resultadoEdadSuma % 2;
 
