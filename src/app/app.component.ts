@@ -13,12 +13,12 @@ export class AppComponent {
 
     resultadoEdadSuma:number;
     
-    resultadoEdadProm:number;
+    resultadoEdadProm:string;
     
     constructor(){
 
       this.resultadoEdadSuma = 0;
-      this.resultadoEdadProm = 0;
+      this.resultadoEdadProm = '0';
 
     }
 
@@ -32,7 +32,7 @@ export class AppComponent {
 
     this.resultadoEdadSuma = parseInt(this.edadUno.value) + parseInt(this.edadDos.value);
 
-    this.resultadoEdadProm = this.resultadoEdadSuma % 2;
+    this.resultadoEdadProm = (this.resultadoEdadSuma / 2).toString();
 
     
   }
@@ -41,10 +41,11 @@ export class AppComponent {
    * limpiar
    */
   public limpiar() {
-    document.getElementById('edadUno').innerText = '';
-    document.getElementById('edadDos').innerText = '';
-    document.getElementById('suma').innerText = '';
-    document.getElementById('prom').innerText = '';
+    
+    (document.getElementById('edadUno') as HTMLInputElement).innerText = '';
+    (document.getElementById('edadDos') as HTMLInputElement).innerText = '';
+    (document.getElementById('suma') as HTMLInputElement).innerText = '';
+    (document.getElementById('prom') as HTMLInputElement).innerText = '';
   }
 
 
