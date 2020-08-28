@@ -41,5 +41,12 @@ export class AppComponent {
     
   }
 
+  /**
+   * limpiar
+   */
+  public limpiar() {
+    
+  }
+
 
 }
