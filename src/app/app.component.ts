@@ -24,10 +24,11 @@ export class AppComponent {
 
   
   public sumar() :void {
-    this.edadUno = document.getElementById('edadUno');
+
+    this.edadUno = document.getElementById('edadUno') as HTMLInputElement;
     console.log(this.edadUno)
 
-    this.edadDos = document.getElementById('edadDos');
+    this.edadDos = document.getElementById('edadDos') as HTMLInputElement;
 
     console.log(this.edadDos);
 
