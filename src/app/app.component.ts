@@ -40,12 +40,12 @@ export class AppComponent {
   /**
    * limpiar
    */
-  public limpiar() {
-    
-    (document.getElementById('edadUno') as HTMLInputElement).innerText = '';
-    (document.getElementById('edadDos') as HTMLInputElement).innerText = '';
-    (document.getElementById('suma') as HTMLInputElement).innerText = '';
-    (document.getElementById('prom') as HTMLInputElement).innerText = '';
+  public limpiar() :void {
+
+    (document.getElementById('edadUno') as HTMLInputElement).value = '';
+    (document.getElementById('edadDos') as HTMLInputElement).value = '';
+    (document.getElementById('suma') as HTMLInputElement).value = '';
+    (document.getElementById('prom') as HTMLInputElement).value = '';
   }
 
 
