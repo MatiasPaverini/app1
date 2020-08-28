@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app1';
+  //title = 'app1';
+
+  edadUno;
+
+  edadDos;
+
+  resultadoEdad;
+
+  edadUno = document.getElementById('edadUno');
+
+  edadDos = document.getElementById('edadDos')
 }
