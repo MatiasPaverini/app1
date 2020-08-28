@@ -8,13 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   //title = 'app1';
 
-  edadUno;
-
-  edadDos;
-
-  resultadoEdad;
-
   edadUno = document.getElementById('edadUno');
 
-  edadDos = document.getElementById('edadDos')
+  edadDos = document.getElementById('edadDos');
+
+  resultadoEdad;
 }
