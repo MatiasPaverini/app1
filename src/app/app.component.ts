@@ -26,15 +26,11 @@ export class AppComponent {
   public sumar() :void {
 
     this.edadUno = document.getElementById('edadUno') as HTMLInputElement;
-    console.log(this.edadUno)
 
     this.edadDos = document.getElementById('edadDos') as HTMLInputElement;
 
-    console.log(this.edadDos);
 
     this.resultadoEdadSuma = parseInt(this.edadUno.value) + parseInt(this.edadDos.value);
-
-    console.log(this.resultadoEdadSuma);
 
     this.resultadoEdadProm = this.resultadoEdadSuma % 2;
 
@@ -45,7 +41,10 @@ export class AppComponent {
    * limpiar
    */
   public limpiar() {
-    
+    document.getElementById('edadUno').innerText = '';
+    document.getElementById('edadDos').innerText = '';
+    document.getElementById('suma').innerText = '';
+    document.getElementById('prom').innerText = '';
   }
 
 
