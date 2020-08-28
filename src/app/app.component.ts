@@ -10,12 +10,20 @@ export class AppComponent {
     edadUno:HTMLElement;
 
     edadDos:HTMLElement;
-    
-    resultadoEdadSuma:number;
 
+    resultadoEdadSuma:number;
+    
     resultadoEdadProm:number;
+    
+    constructor(){
+
+      this.resultadoEdadSuma = 0;
+      this.resultadoEdadProm = 0;
+
+    }
+
   
-  public onClick() {
+  public onClick() :void {
     this.edadUno = document.getElementById('edadUno');
 
     this.edadDos = document.getElementById('edadDos');
