@@ -10,10 +10,18 @@
 
 <div>
 
-    <input type="button" value="Calcular" id="calc">
+    <input type="button" value="Calcular" id="calc" ng-click='onClick'>
     
     <input type="button" value="Limpiar" id="clean">
     
 </div>
+
+<div>
+    <label>Resultado Suma</label>
+
+    <input type="text" id="suma" [(ng-model)]="resultadoEdadSuma">
+</div>
+
+
 
 <router-outlet></router-outlet>

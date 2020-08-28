@@ -7,10 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //title = 'app1';
+    edadUno:HTMLElement;
 
-  edadUno = document.getElementById('edadUno');
+    edadDos:HTMLElement;
+    
+    resultadoEdadSuma:number;
 
-  edadDos = document.getElementById('edadDos');
+    resultadoEdadProm:number;
+  
+  public onClick() {
+    this.edadUno = document.getElementById('edadUno');
 
-  resultadoEdad;
+    this.edadDos = document.getElementById('edadDos');
+
+    this.resultadoEdadSuma = parseInt(this.edadUno.innerText) + parseInt(this.edadDos.innerText);
+
+    this.resultadoEdadProm = this.resultadoEdadSuma % 2;
+
+    
+  }
+
+
 }
